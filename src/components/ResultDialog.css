@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#resultado {
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+} 
+
+#resultado::backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.dialog-content{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#text-result {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+
+.botao {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-top: 25px;
+}
+
+.botao svg {
+    fill: black;
+    transition: fill 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.botao:hover {
+    border-color: black;
+}
+
+.botao:hover svg {
+    fill: black;
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+#titulo {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.win {
+    color: rgb(34, 253, 34);
+}
+
+.lose {
+    color: rgb(255, 30, 30);
+}
