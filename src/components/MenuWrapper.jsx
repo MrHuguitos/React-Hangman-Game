@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import pixelLogo from '../assets/pixel.svg';
+import pixelLogo from '../assets/pixel.webp';
 import HelpDialog from './HelpDialog.jsx';
 import AboutDialog from './AboutDialog.jsx';
 import './MenuWrapper.css'
@@ -27,9 +26,9 @@ function MenuWrapper() {
     return (
         <header className = "menu__wrapper">
             <div className = "menu__bar">
-                <Link to = "/" title = "Home" aria-label = "Recarregar" className = "logo">
-                    <img src = {pixelLogo} alt = "Game logo" className = "pixel-icon" />
-                </Link>
+                <a href="/" title="Home" aria-label="Recarregar" className="logo">
+                    <img src={pixelLogo} alt="Game logo" className="pixel-icon" />
+                </a>
                 <span className = "pixel-text">F O R * A</span>
             </div>
             <div className = "menu__info">

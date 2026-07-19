@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import perfilPhoto from '../assets/perfil.svg';
+import perfilPhoto from '../assets/perfil.webp';
 import './AboutDialog.css'
 
 const InstagramURL = "https://www.instagram.com/mr_huguitos";
