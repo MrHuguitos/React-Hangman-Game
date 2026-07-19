@@ -17,8 +17,8 @@ function ResultDialog({ isOpen, resultado, palavra }) {
         if (isOpen) {
             dialogElement?.showModal();
 
-            const jogadasAtuais = localStorage.getItem('partidasJogadas') || 0;
-            const vitoriasAtuais = localStorage.getItem('vitorias') || 0;
+            const jogadasAtuais = parseInt(localStorage.getItem('partidasJogadas') || '0');
+            const vitoriasAtuais = parseInt(localStorage.getItem('vitorias') || '0');
 
             localStorage.setItem('partidasJogadas', (jogadasAtuais + 1));
             localStorage.setItem('vitorias', (resultado === 'win' ? vitoriasAtuais + 1 : vitoriasAtuais));
